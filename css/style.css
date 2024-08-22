@@ -7,6 +7,11 @@
     z-index: 99999;
 }
 
+body
+{
+   font-family:  "Poppins","fantasy";    
+}
+
 #spinner.show {
     transition: opacity .5s ease-out, visibility 0s linear 0s;
     visibility: visible;
@@ -105,7 +110,7 @@
 
 
 .sub-title {
-    font-family: "Edu TAS Beginner", cursive;
+    font-family: "Poppins", cursive;
     font-weight: 700;
     font-size: 22px;
 }

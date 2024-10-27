@@ -6,21 +6,15 @@ on:
       - main  # Triggers when you push to the main branch
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v2
-
-      - name: Build the site
-        run: |
-          # Run your build commands, e.g., npm install && npm run build
-          npm install
-          npm run build
+        uses: actions/checkout@v3
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Update this to your build output folder
+          publish_dir: ./  # Set to the root directory for static sites

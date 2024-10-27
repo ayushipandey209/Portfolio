@@ -17,4 +17,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Set to the root directory for static sites
+          publish_dir: ./  # Directory to deploy
+          publish_branch: gh-pages  # Branch to deploy to

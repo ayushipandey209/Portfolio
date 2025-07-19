@@ -340,6 +340,12 @@ body
 }
 /*** Experience End ***/
 
+.experience-item.mobile-app-dev {
+    background: rgba(1, 95, 201, 0.10); /* Light blue, matching --bs-primary but with opacity */
+    border-left: 6px solid var(--bs-primary);
+    /* Optionally, you can add a subtle shadow or other accent */
+}
+
 
 /*** Skills Start ***/
 .skills-content .skills-item {
@@ -510,6 +516,40 @@ body
     }
 }
 /*** footer End ***/
+
+/* Expertise List Styling for Skills Section */
+.expertise-list {
+    background: var(--bs-light);
+    border-radius: 32px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .03);
+    padding: 2rem 2.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.5s;
+}
+.expertise-list:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+}
+.expertise-list ul {
+    margin: 0;
+    padding: 0;
+}
+.expertise-list li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.7);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+}
+
+.expertise-list li strong {
+    color: var(--bs-primary);
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+
 
 
 
